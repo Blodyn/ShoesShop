@@ -31,8 +31,8 @@ const Home = ({ navigation }) => {
             img: images.nikePegasus36,
             bgColor: "#BF012C",
             type: "RUNNING",
-            price: "$186",
-            sizes: [6, 7, 8, 9, 10]
+            price: "186€",
+            sizes: [38, 40, 42, 44, 46]
         },
         {
             id: 1,
@@ -40,8 +40,8 @@ const Home = ({ navigation }) => {
             img: images.nikeMetcon5Black,
             bgColor: "#D39C67",
             type: "TRAINING",
-            price: "$135",
-            sizes: [6, 7, 8, 9, 10, 11, 12]
+            price: "135€",
+            sizes: [36, 38, 40, 42, 44, 46, 48]
         },
         {
             id: 2,
@@ -49,8 +49,8 @@ const Home = ({ navigation }) => {
             img: images.nikeZoomKobe1Proto,
             bgColor: "#7052A0",
             type: "BASKETBALL",
-            price: "$199",
-            sizes: [6, 7, 8, 9]
+            price: "199€",
+            sizes: [38, 40, 42, 44]
         },
     ]);
 
@@ -61,8 +61,8 @@ const Home = ({ navigation }) => {
             img: images.nikeMetcon4,
             bgColor: "#414045",
             type: "TRAINING",
-            price: "$119",
-            sizes: [6, 7, 8]
+            price: "119€",
+            sizes: [38, 40, 42]
         },
         {
             id: 1,
@@ -70,8 +70,8 @@ const Home = ({ navigation }) => {
             img: images.nikeMetcon6,
             bgColor: "#4EABA6",
             type: "TRAINING",
-            price: "$135",
-            sizes: [6, 7, 8, 9, 10, 11]
+            price: "135€",
+            sizes: [36, 38, 40, 42, 44, 46]
         },
         {
             id: 2,
@@ -79,8 +79,8 @@ const Home = ({ navigation }) => {
             img: images.nikeMetcon5Purple,
             bgColor: "#2B4660",
             type: "TRAINING",
-            price: "$124",
-            sizes: [6, 7, 8, 9]
+            price: "124€",
+            sizes: [38, 40, 42, 44]
         },
         {
             id: 3,
@@ -88,8 +88,8 @@ const Home = ({ navigation }) => {
             img: images.nikeMetcon3,
             bgColor: "#A69285",
             type: "TRAINING",
-            price: "$99",
-            sizes: [6, 7, 8, 9, 10, 11, 12, 13]
+            price: "99€",
+            sizes: [36, 38, 40, 41, 42, 44, 46, 48]
         },
         {
             id: 4,
@@ -97,8 +97,8 @@ const Home = ({ navigation }) => {
             img: images.nikeMetconFree,
             bgColor: "#A02E41",
             type: "TRAINING",
-            price: "$108",
-            sizes: [6, 7, 8, 9, 10, 11]
+            price: "108€",
+            sizes: [36, 38, 40, 42, 44, 46]
         },
     ]);
 
@@ -227,7 +227,7 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
-            <Text style={{ marginTop: SIZES.radius, marginHorizontal: SIZES.padding, ...FONTS.largeTitleBold }}>TRENDING</Text>
+            <Text style={{ marginTop: SIZES.radius, marginHorizontal: SIZES.padding, ...FONTS.largeTitleBold }}>TENDANCE</Text>
 
             <View style={{ height: 260, marginTop: SIZES.radius }}>
                 <FlatList
@@ -315,7 +315,7 @@ const Home = ({ navigation }) => {
                             <Text style={{ marginTop: SIZES.radius, marginHorizontal: SIZES.padding, color: COLORS.white, ...FONTS.h1 }}>{selectedItem.price}</Text>
                             <View style={{ flexDirection: 'row', marginTop: SIZES.radius, marginHorizontal: SIZES.padding }}>
                                 <View>
-                                    <Text style={{ color: COLORS.white, ...FONTS.body3 }}>Select size</Text>
+                                    <Text style={{ color: COLORS.white, ...FONTS.body3 }}>Sélectionnez la taille</Text>
                                 </View>
                                 <View style={{ flex: 1, flexWrap: 'wrap', flexDirection: 'row', marginLeft: SIZES.radius }}>
                                     {renderShoeSizes()}
@@ -330,7 +330,7 @@ const Home = ({ navigation }) => {
                                     setShowAddToBagModal(false)
                                 }}
                             >
-                                <Text style={{ color: COLORS.white, ...FONTS.largeTitleBold }}>Add to Bag</Text>
+                                <Text style={{ color: COLORS.white, ...FONTS.largeTitleBold }}>Ajouter au panier</Text>
                             </TouchableOpacity>
                         </View>
                     </BlurView>

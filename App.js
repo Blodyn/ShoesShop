@@ -30,7 +30,7 @@ const App = () => {
                     name="Home"
                     component={Home}
                     options={{
-                        title: 'SHOE SELECTOR',
+                        title: 'ShoesShop',
                         headerStyle: {
                             //backgroundColor: '#f4511e',
                         },
